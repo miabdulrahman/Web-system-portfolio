@@ -226,15 +226,15 @@ img { max-width: 100%; display: block; }
     100% { transform: translateY(0px); }
 }
 
-/* --- 6. SKILLS GRID --- */
-.skills-grid {
+
+.Supperskillcontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 20px;
     text-align: center;
 }
 
-.skill-card {
+.skillcontainer {
     background-color: var(--surface-color);
     padding: 25px;
     border-radius: 12px;
@@ -245,12 +245,12 @@ img { max-width: 100%; display: block; }
     justify-content: center;
 }
 
-.skill-card:hover {
+.skillcontainer:hover {
     transform: translateY(-5px);
     background-color: var(--primary-color);
 }
 
-.skill-card:hover h3 {
+.skillcontainer:hover h3 {
     color: white;
 }
 
@@ -260,6 +260,8 @@ img { max-width: 100%; display: block; }
     margin-bottom: 15px;
     object-fit: contain;
 }
+
+
 
 /* --- 7. EXPERIENCE TIMELINE --- */
 .timeline {
@@ -358,6 +360,26 @@ img { max-width: 100%; display: block; }
     border: 1px solid var(--border-color);
     border-radius: 20px;
     color: var(--text-light);
+    transition: var(--transition);
+}
+
+.tag:hover {
+
+    cursor: pointer;
+    transform: translateY(-10px);
+ 
+
+}
+
+.linkedin-iframe {
+    width: 100%;
+    max-width: 504px;
+    height: 399px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+    display: block;
 }
 
 /* --- 9. CONTACT FORM --- */
@@ -403,6 +425,28 @@ footer {
     margin-top: 50px;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
 /* --- 11. MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
     .hamburger { display: block; }
@@ -439,6 +483,11 @@ footer {
         width: 250px;
         height: 250px;
     }
+
+    .linkedin-iframe {
+        height: 250px;
+    }
+
 }
 
 /* Theme Toggle Button */
