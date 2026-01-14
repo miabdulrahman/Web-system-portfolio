@@ -490,6 +490,14 @@ footer {
 
 }
 
+
+@media (max-width: 480px) {
+    .project-iframe {
+        height: 200px;
+        max-width: 100%;
+    }
+}
+
 /* Theme Toggle Button */
 .theme-btn {
     background: none;
