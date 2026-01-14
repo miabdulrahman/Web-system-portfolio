@@ -371,7 +371,7 @@ img { max-width: 100%; display: block; }
 
 }
 
-.linkedin-iframe {
+.project-iframe {
     width: 100%;
     max-width: 504px;
     height: 399px;
@@ -484,7 +484,7 @@ footer {
         height: 250px;
     }
 
-    .linkedin-iframe {
+    .project-iframe {
         height: 250px;
     }
 
